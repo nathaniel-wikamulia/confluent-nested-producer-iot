@@ -76,3 +76,7 @@ WHERE temp[1] > 100 ;
 ```
 5. Click the "Run" button on the right side of the cell.
 6. After you execute the Flink query, it will begin inserting the filtered data into a new Kafka topic called "alert_topic_unnested". If you see messages appearing in "alert_topic_unnested", it means your query ran successfully.
+7. To see the data in the "alert_topic_unnested", you can run the following query:
+```
+SELECT * FROM alert_topic_unnested
+```
